@@ -20,15 +20,15 @@ self.__precacheManifest = [
     "url": "/pomodoro-clock-reactjs/static/js/runtime~main.d5b337d0.js"
   },
   {
-    "revision": "a4b11558a8b78af9b733",
-    "url": "/pomodoro-clock-reactjs/static/js/main.a4b11558.chunk.js"
+    "revision": "9bc2c53f737250eef553",
+    "url": "/pomodoro-clock-reactjs/static/js/main.9bc2c53f.chunk.js"
   },
   {
     "revision": "9ab444e805cc2359be69",
     "url": "/pomodoro-clock-reactjs/static/js/1.9ab444e8.chunk.js"
   },
   {
-    "revision": "a4b11558a8b78af9b733",
+    "revision": "9bc2c53f737250eef553",
     "url": "/pomodoro-clock-reactjs/static/css/main.14bf7424.chunk.css"
   },
   {
@@ -36,7 +36,7 @@ self.__precacheManifest = [
     "url": "/pomodoro-clock-reactjs/static/css/1.a0f7a307.chunk.css"
   },
   {
-    "revision": "b637b7832997c196c08221a7dc126fc6",
+    "revision": "a8ad0200c62791f0efb5f5e6b01d4371",
     "url": "/pomodoro-clock-reactjs/index.html"
   }
 ];
