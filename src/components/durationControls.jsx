@@ -82,6 +82,12 @@ class DurationControls extends Component {
           >
             -
           </div>
+
+          <div
+            className="button button-in"
+            id="flicker-toggle"
+            onClick={this.props.toggleFlick}
+          />
         </div>
       </React.Fragment>
     );

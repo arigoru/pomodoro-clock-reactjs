@@ -26,11 +26,11 @@ body {
   --button-bg-color: hsl(210, 30%, 15%);
   --text-color: hsl(0, 0%, 20%);
   --light-text-color: hsl(0, 10%, 90%);
-  --display-color: hsl(0, 0%, 70%);
+  --display-color: hsl(100, 50%, 80%);
   --crt-color-1: rgba(0, 30, 255, 0.5);
   --crt-color-2: rgba(255, 0, 80, 0.3);
   /* phone colors */
-  --phone-body-color: hsl(210, 60%, 45%);
+  --phone-body-color: hsl(210, 60%, 5%);
   --display-color-phone: hsl(350, 60%, 90%);
   --button-phone-hover: hsl(210, 40%, 65%);
 }
@@ -76,6 +76,18 @@ body {
   background-image: var(--noise-image);
   background-color: var(--secondary-body-color);
   z-index: 2;
+}
+
+#flicker-toggle {
+  position: absolute;
+  top: 0vw;
+  height: 2vw;
+  width: 2vw;
+  font-size: 4em;
+  border-radius: 1em;
+}
+#flicker-toggle:hover {
+  background-color: var(--button-icon-hover);
 }
 
 .break-duration {
@@ -354,6 +366,9 @@ body {
     background: none;
     display: none;
   }
+  #flicker-toggle {
+    display: none;
+  }
   .button-in {
     background: hsla(350, 0%, 10%, 10%);
   }
@@ -416,7 +431,7 @@ body {
     position: absolute;
     border-radius: 0.1em;
     right: -18.5vw;
-    top: 11.5vw;
+    top: 13.5vw;
     padding: 0px;
     margin: 0px;
   }
@@ -424,7 +439,7 @@ body {
     border-radius: 0.1em;
     position: absolute;
     right: -43.5vw;
-    top: 11.5vw;
+    top: 13.5vw;
     padding: 0px;
     margin: 0px;
   }

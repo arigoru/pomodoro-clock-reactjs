@@ -6,8 +6,8 @@ class Display extends Component {
   state = {};
 
   render() {
-    return (
-      <div className={this.props.status.flick ? "timer crt" : "timer"}>
+    return this.props.status.flick ? (
+      <div className="timer crt">
         <div className="display-3 time-label" id="break-length">
           {this.props.status.breakDuration}
         </div>
@@ -23,6 +23,8 @@ class Display extends Component {
           {this.props.status.sessionDuration}
         </div>
       </div>
+    ) : (
+      <div className="timer" />
     );
   }
 }

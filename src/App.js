@@ -16,7 +16,7 @@ let timerReference;
 
 class App extends Component {
   state = {
-    flick: false,
+    flick: true,
     ticking: false,
     breakDuration: 5,
     sessionDuration: 25,
@@ -26,10 +26,10 @@ class App extends Component {
   };
 
   playNotification = () => {
-    this.audioBeep.play();
+    this.notificationSound.play();
     setTimeout(() => {
-      this.audioBeep.pause();
-      this.audioBeep.currentTime = 0;
+      this.notificationSound.pause();
+      this.notificationSound.currentTime = 0;
     }, 3000);
     return 0;
   };
@@ -94,8 +94,8 @@ class App extends Component {
     }
   };
   resetState = () => {
-    this.audioBeep.pause();
-    this.audioBeep.currentTime = 0;
+    this.notificationSound.pause();
+    this.notificationSound.currentTime = 0;
     clearInterval(timerReference);
     this.setState({
       timerValue: 25 * 60,
@@ -106,13 +106,21 @@ class App extends Component {
     });
   };
 
+  toggleFlick = () => {
+    this.setState({
+      flick: !this.state.flick
+    });
+  };
+
   render() {
     return (
       <div className="App">
         <div className="secondary-body" />
         <div className="top-bar" />
-
-        <DurationControls handler={this.changeDuration} />
+        <DurationControls
+          toggleFlick={this.toggleFlick}
+          handler={this.changeDuration}
+        />
         <InfoBar
           startStopHandler={
             this.state.ticking ? this.stopSession : this.startSession
@@ -128,9 +136,9 @@ class App extends Component {
         <audio
           id="beep"
           preload="auto"
-          src="https://goo.gl/65cBl1"
+          src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg"
           ref={audio => {
-            this.audioBeep = audio;
+            this.notificationSound = audio;
           }}
         />
       </div>
