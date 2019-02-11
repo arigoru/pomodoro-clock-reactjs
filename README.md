@@ -1,3 +1,12 @@
+## General information
+
+Simple Pomodoro Timer/Clock inspired by old electronic handheld games.  
+It has scalable interface and different layouts for vertical and horizontal aspect ratios.
+
+This was my final project for Front-end libraries certification on https://http://freecodecamp.org.
+
+Used technologies are just basic Javascript and React.js (and HTML+CSS of course).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
